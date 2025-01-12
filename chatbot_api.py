@@ -15,7 +15,7 @@ import os
 
 # url = ["http://localhost:8000/ask", "http://localhost:8000/login", "http://localhost:8000/signup", "http://localhost:8000/chats"]
 # MongoDB connection
-connection_string = os.getenv("MONGO_URI")
+connection_string = os.getenv("MONGO_URL")
 client = MongoClient(connection_string)
 db = client["mentalhealth"]
 users_collection = db["users"]

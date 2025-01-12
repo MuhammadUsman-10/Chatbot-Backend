@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import os
 
 # MongoDB connection string
-connection_string = os.getenv("MONGO_URI")
+connection_string = os.getenv("MONGO_URL")
 
 chat_name =  f"Chat-{datetime.now().isoformat()}"
 
